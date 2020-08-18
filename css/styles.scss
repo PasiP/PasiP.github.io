@@ -54,3 +54,6 @@ body {
 
 .details { position: absolute; font-size: .8rem; top: 15px; right: 20px; opacity: 0.75; }
 .details span { margin-left: 16px; }
+
+.icon { width: 24px; height: 24px; margin-right: 10px; vertical-align: middle; position: relative; }
+.icon--sub { fill: #333; width: 16px; height: 16px; margin: 0; vertical-align: sub; }
