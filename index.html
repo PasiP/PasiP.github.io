@@ -4,21 +4,29 @@
 
 <!doctype html>
 <html lang="en-GB">
+  <head>
+    <title>PasiP GitHub.io Page</title>
+    <link href="./css/styles.css" media="all" rel="stylesheet">
+  </head>
  <body>
 
    <ul class="portfolio">
-   {% for repo in site.github.public_repositories limit:28 %}
+    {% for repo in site.github.public_repositories limit:28 %}
 
        {% if repo.fork != true %}
-           <li class="repo">
+         <li class="repo">
+          <h3><a href="{{ repo.homepage }}">{{ repo.name }}</a></h3>
+          <p>{{ repo.description }}</p>
 
-               <a href="{{ repo.homepage }}">{{ repo.name }}</a>
+          <aside class="details">
+            <span>Stars {{ repo.stargazers_count }}</span>
+            <span>Forks {{ repo.forks_count }}</span>
+          </aside>
+        </li>
+      {% endif %}
 
-           </li>
-       {% endif %}
-
-   {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
 
  </body>
 </html>
