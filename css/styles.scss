@@ -15,6 +15,12 @@ body {
     box-sizing: border-box;
 }
 
+h1 { font-size: 2rem; line-height: 3rem; font-weight: 700; }
+
+h2 { font-size: 1.4rem; line-height: 2.8rem; font-weight: 400; }
+
+h3 { font-size: 1.1rem; line-height: 2.2rem; display: inline; font-weight: 700; vertical-align: middle; }
+
 .portfolio {
     list-style: none;
     padding: 0;
