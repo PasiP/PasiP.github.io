@@ -9,7 +9,7 @@
     <link href="./css/styles.css" media="all" rel="stylesheet">
   </head>
  <body>
-  <p>{{ repo | jsonify }}</p>
+  <p>{{ site.github.public_repositories | jsonify }}</p>
    <ul class="portfolio">
     {% for repo in site.github.public_repositories limit:24 %}
 
