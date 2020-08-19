@@ -9,13 +9,11 @@
     <link href="./css/styles.css" media="all" rel="stylesheet">
   </head>
  <body>
-
+  <p>{{ repo | jsonify }}</p>
    <ul class="portfolio">
-    {% for repo in site.github.public_repositories limit:28 %}
+    {% for repo in site.github.public_repositories limit:24 %}
 
-      {% comment %}
-        {% if repo.fork != true %}
-      {% endcomment %}
+      {% if repo.fork != true %}
          <li class="repo">
            <svg class="icon">
              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#javascript">
@@ -49,9 +47,7 @@
               {{ repo.forks_count }}</span>
           </aside>
         </li>
-      {% comment %}
         {% endif %}
-      {% endcomment %}
 
     {% endfor %}
   </ul>
