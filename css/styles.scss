@@ -38,14 +38,6 @@ footer, header { display: none; }
     flex-wrap: wrap;
     width: 90%;
     max-width: 1200px;
-    &:hover {
-        .repo {
-            opacity: 0.5;
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
 }
 
 .repo {
