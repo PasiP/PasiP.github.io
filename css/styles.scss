@@ -30,7 +30,7 @@ footer, header { display: none; }
 
 .portfolio {
     background: no-repeat url(../images/header_img.png);
-    background-position:0 60px;
+    background-position:50% 60px;
     list-style: none;
     padding:  400px 0 0 0;
     margin: 0 auto;
@@ -73,5 +73,5 @@ footer, header { display: none; }
 .details { position: absolute; font-size: .8rem; top: 15px; right: 20px; opacity: 0.75; }
 .details span { color:#27fdf5; margin-left: 16px; }
 
-.icon { fill:#000; width: 24px; height: 24px; margin-right: 10px; vertical-align: middle; position: relative; }
+.icon { fill:#27fdf5; width: 24px; height: 24px; margin-right: 10px; vertical-align: middle; position: relative; }
 .icon--sub { fill: #fc15e9; width: 16px; height: 16px; margin: 0; vertical-align: sub; }
