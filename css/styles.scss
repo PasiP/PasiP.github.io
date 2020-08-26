@@ -1,6 +1,9 @@
 ---
 # Styles
 ---
+html {
+  background: no-repeat fixed url(../images/synthwave_bg.jpg);
+}
 
 body {
     margin: 0;
@@ -15,15 +18,21 @@ body {
     box-sizing: border-box;
 }
 
-h1 { font-size: 2rem; line-height: 3rem; font-weight: 700; }
+h1 { font-size: 2.4rem; line-height: 3rem; font-weight: 700; }
 
-h2 { font-size: 1.4rem; line-height: 2.8rem; font-weight: 400; }
+h2 { font-size: 2rem; line-height: 2.8rem; font-weight: 400; }
 
-h3 { font-size: 1.1rem; line-height: 2.2rem; display: inline; font-weight: 700; vertical-align: middle; }
+h3 { font-size: 1.4rem; line-height: 2.2rem; display: inline; font-weight: 700; vertical-align: middle; }
+
+a { color:#fc15e9; }
+
+footer, header { display: none; }
 
 .portfolio {
+    background: no-repeat url(../images/header_img.png);
+    background-position:0 60px;
     list-style: none;
-    padding: 0;
+    padding:  400px 0 0 0;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -42,10 +51,13 @@ h3 { font-size: 1.1rem; line-height: 2.2rem; display: inline; font-weight: 700; 
 .repo {
     position: relative;
     display: block;
-    width: 32.33%;
-    margin: .5%;
+    color: #d7fffe;
+    width: 99%;
+    height: 350px;
+    margin: 6% 1% 1% 1%;
     padding: 30px 30px;
-    background: #f4f4f4;
+    border: solid 2px #27fdf5;
+    background: #111111;
     transition: .2s;
     @media (max-width: 960px) {
         width: 49%;
@@ -59,7 +71,7 @@ h3 { font-size: 1.1rem; line-height: 2.2rem; display: inline; font-weight: 700; 
 }
 
 .details { position: absolute; font-size: .8rem; top: 15px; right: 20px; opacity: 0.75; }
-.details span { margin-left: 16px; }
+.details span { color:#27fdf5; margin-left: 16px; }
 
-.icon { width: 24px; height: 24px; margin-right: 10px; vertical-align: middle; position: relative; }
-.icon--sub { fill: #333; width: 16px; height: 16px; margin: 0; vertical-align: sub; }
+.icon { fill:#000; width: 24px; height: 24px; margin-right: 10px; vertical-align: middle; position: relative; }
+.icon--sub { fill: #fc15e9; width: 16px; height: 16px; margin: 0; vertical-align: sub; }
