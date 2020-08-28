@@ -2,5 +2,9 @@
   {
     "name": "Awesome-Bloglist-Tool",
     "technologies": "React / Node / Express / MongoDB / Redux / JavaScript"
+  },
+  {
+    "name": "PasiP.github.io",
+    "technologies": "Jekyll, Html, Css"
   }
 ]
