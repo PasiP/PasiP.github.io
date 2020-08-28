@@ -24,8 +24,6 @@ h2 { font-size: 2.4rem; line-height: 2.8rem; font-weight: 400; }
 
 h3 { font-size: 2rem; line-height: 2.8rem; display: inline; font-weight: 700; vertical-align: middle; }
 
-a { color:#fc15e9; }
-
 footer, header { display: none; }
 
 .portfolio {
@@ -54,9 +52,8 @@ footer, header { display: none; }
     @media (max-width: 960px) {
         width: 49%;
     }
-    a {
-        text-decoration: none;
-    }
+    a { color:#fc15e9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 }
 
 .details { position: absolute; font-size: .8rem; top: 15px; right: 20px; opacity: 0.75; }
