@@ -25,9 +25,10 @@
           <p>{{ repo.description }}</p>
           <p>
             {% for tech in site.data.technologies %}
-            {% if tech.name == repo.name %}
-              {{ tech.technologies }}
-            {% endif %}
+              {% if tech.name == repo.name %}
+                {{ tech.technologies }}
+              {% endif %}
+            {% endfor %}
           </p>
 
           <aside class="details">
