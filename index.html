@@ -23,6 +23,12 @@
            </svg>
           <h3><a href="{{ repo.svn_url }}">{{ repo.name }}</a></h3>
           <p>{{ repo.description }}</p>
+          <p>
+            {% for tech in site.data.technologies %}
+            {% if tech.name == repo.name %}
+              {{ tech.technologies }}
+            {% endif %}
+          </p>
 
           <aside class="details">
             <span>
