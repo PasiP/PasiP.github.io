@@ -16,7 +16,7 @@
      </li>
     {% for repo in site.github.public_repositories limit:24 %}
 
-      {% if repo.fork != true %}
+      {% if repo.fork != true and repo.license != nil %}
          <li class="repo">
            <svg class="icon">
              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./images/icons.svg#{{ repo.language | downcase }}" />
