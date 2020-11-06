@@ -10,5 +10,9 @@
   {
     "name": "Tilt",
     "technologies": "Android / Java / Xml"
+  },
+  {
+    "name": "Timer",
+    "technologies": "JavaScript / Preact / Snowpack"
   }
 ]
